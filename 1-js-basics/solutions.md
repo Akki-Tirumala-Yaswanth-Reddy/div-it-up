@@ -19,3 +19,40 @@
     console.log(addWithIncrease(1,2,3));
     multiplyWithIncrese(1,2,3);
 ```
+
+## Making-decisions assignment
+
+```javascript
+    let allStudents = ['A', 'B-', 1,4,5,2]
+    let studentsWhoPass = [];
+
+    for(let i = 0 ; i <> allStudents.length ; i++){
+        let val = allStudents[i];
+        if (Number.isInteger(val)){
+            if (val >= 3 ){
+                studentsWhoPass.push(val);
+            }
+        }
+        else{
+            switch(val){
+                case 'A':
+                    studentsWhoPass.push(val);
+                    break;
+                case 'A-':
+                    studentsWhoPass.push(val);
+                    break;
+                case 'B':
+                    studentsWhoPass.push(val);
+                    break;
+                case 'B-':
+                    studentsWhoPass.push(val);
+                    break;
+                case 'C':
+                    studentsWhoPass.push(val);
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+```
