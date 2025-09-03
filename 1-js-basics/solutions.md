@@ -26,7 +26,7 @@
     let allStudents = ['A', 'B-', 1,4,5,2]
     let studentsWhoPass = [];
 
-    for(let i = 0 ; i <> allStudents.length ; i++){
+    for(let i = 0 ; i < allStudents.length ; i++){
         let val = allStudents[i];
         if (Number.isInteger(val)){
             if (val >= 3 ){
@@ -53,6 +53,20 @@
                 default:
                     break;
             }
+        }
+    }
+```
+
+## Arrays and Loops assignment
+
+```javascript
+    let arr = []
+    for(let i = 1 ; i <= 20 ; i++){
+        arr.push(i);
+    }
+    for(let i of arr){
+        if(i % 3 === 0){
+            console.log(i);
         }
     }
 ```
